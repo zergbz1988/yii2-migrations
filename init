@@ -20,8 +20,14 @@ if (!extension_loaded('openssl')) {
 
 $params = getParams();
 $root = str_replace('\\', '/', __DIR__);
-$app = str_replace('\\', '/', dirname (dirname(__DIR__)));
 
+$app = str_replace('\\', '/', '/../../../yii2-migrations/');
+
+if (!file_exists($app)) {
+
+    mkdir($app);
+
+}
 
 $envs = require("$root/environments/index.php");
 $envNames = array_keys($envs);
@@ -75,7 +81,7 @@ if (isset($env['skipFiles'])) {
 }
 $all = false;
 foreach ($files as $file) {
-    if (!copyFile($root, "environments/{$env['path']}/$file", $file, $all, $params)) {
+    if (!copyFile($root, "environments/{$env['path']}/$file", $app . $file, $all, $params)) {
         break;
     }
 }
