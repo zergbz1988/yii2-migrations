@@ -1,18 +1,11 @@
 {
-  "name": "",
-  "description": "",
-  "keywords": [
-  ],
+  "name": "zergbz1988/yii2-migrations",
+  "description": "yii2-migrations",
   "type": "project",
-  "license": "BSD-3-Clause",
-  "support": {
-  },
   "minimum-stability": "stable",
   "require": {
-    "php": ">=5.6.0",
+    "php": ">=5.4.0",
     "yiisoft/yii2": "~2.0.6"
-  },
-  "require-dev": {
   },
   "config": {
     "process-timeout": 1800
@@ -22,7 +15,5 @@
       "npm-asset-library": "vendor/npm",
       "bower-asset-library": "vendor/bower"
     }
-  },
-  "scripts": {
   }
 }
