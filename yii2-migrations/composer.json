@@ -8,12 +8,13 @@
     "yiisoft/yii2": "~2.0.6"
   },
   "config": {
-    "process-timeout": 1800
+    "process-timeout": 1800,
+    "vendor-dir": "../vendor"
   },
   "extra": {
     "asset-installer-paths": {
-      "npm-asset-library": "vendor/npm",
-      "bower-asset-library": "vendor/bower"
+      "npm-asset-library": "../vendor/npm",
+      "bower-asset-library": "../vendor/bower"
     }
   }
 }

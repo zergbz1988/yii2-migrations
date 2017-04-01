@@ -2,7 +2,6 @@
 return [
     'id' => 'app-console',
     'basePath' => dirname(__DIR__),
-    'controllerNamespace' => 'controllers',
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
