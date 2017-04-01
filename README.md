@@ -1,8 +1,8 @@
 add to your composer.json file:
 
-    "scripts": {
-        "post-install-cmd": "composer create-project zergbz1988/yii2-migrations"
-    }
 
+    "zergbz1988/yii2-migrations": "@dev"
 
-after first install go to appdir/yii2-migrations and run php composer.phar install
+  "scripts": {
+    "post-install-cmd": "php vendor/zergbz1988/yii2-migrations/init --env=Prod --overwrite=n"
+  }
