@@ -9,12 +9,12 @@
   },
   "config": {
     "process-timeout": 1800,
-    "vendor-dir": "../vendor"
+    "vendor-dir": "../vendor/yii2-migrations"
   },
   "extra": {
     "asset-installer-paths": {
-      "npm-asset-library": "../vendor/npm",
-      "bower-asset-library": "../vendor/bower"
+      "npm-asset-library": "../vendor/yii2-migrations/npm",
+      "bower-asset-library": "../vendor/yii2-migrations/bower"
     }
   }
 }
